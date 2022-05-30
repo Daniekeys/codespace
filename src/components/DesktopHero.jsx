@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Fade from 'react-reveal/Fade';
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from 'js-cookie'
 import carImg from "../assets/CAR-IMAGE.png";
 import desk3 from "../assets/desk/desk3.png";
 
@@ -72,6 +75,8 @@ const styles = {
 // const iconArray = [bitcoin, chaticon, facebook, instagram, steam];
 
 const DesktopHero = () => {
+  const {t} = useTranslation();
+
   const [index, setIndex] = useState(0);
   const [image, setImage] = useState(imagesArray[0]);
   const [openModal, setOpenModal] = useState(false);
@@ -123,7 +128,7 @@ const DesktopHero = () => {
           <div className={styles.sectionA}>
             <Fade top delay={100}>
               <h1 className={styles.title}>
-                The Future Of Smart Gaming Begins With Sportrex
+                {t('h_future')}
               </h1>
             </Fade>
             <Fade bottom delay={500}>

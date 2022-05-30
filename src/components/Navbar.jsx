@@ -3,6 +3,7 @@ import {FaBars} from 'react-icons/fa';
 import logo from '../assets/primarylogo.png';
 import AirdropModal from './Modals/AirdropModal'
 import PresaleModal from './Modals/PresaleModal'
+import Dropdown from './Drop'
 
 const styles = {
   parentContainer: "w-full  mb-8 left-0 sticky-nav bg-blue ",
@@ -25,6 +26,7 @@ const Navbar = () => {
     // write a function that applies the active class to the menu item
   const [openModal, setOpenModal] = useState(false);
   const [openPresale, setOpenPresale] = useState(false)
+  
 
     const activeClass = (path) => {
         if(path === window.location.pathname){
@@ -73,6 +75,9 @@ const Navbar = () => {
                 <a href="#API" className={styles.menuItem}>
                   API
                 </a>
+              </div>
+              <div className={activeClass("/about")}>
+             <Dropdown />
               </div>
             </div>
             <div className={styles.buttonContainer}>

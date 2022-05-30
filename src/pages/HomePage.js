@@ -1,11 +1,12 @@
-import React,  { Suspense } from "react";
-
+import React,  { Suspense,useState } from "react";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from 'js-cookie'
 import {
   Footer,
   Navbar,
   About,
   MobileNavbar,
-  
   DesktopHero,
   Partners,
   Tokennomics,
@@ -38,6 +39,7 @@ const styles = {
 
 const HomePage = () => {
 
+  const {t} = useTranslation();
 
 
   return (
