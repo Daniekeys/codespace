@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* import a font locally as a font face from assets folder */
+@font-face {
+  font-family: "Biome";
+  src: url("./assets/biomebold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BiomeRegular";
+  src: url("./assets/BiomeRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BiomeSemibold";
+  src: url("./assets/regular.ttf") format("truetype");
+}
+.biome-regular {
+  font-family: "BiomeRegular", sans-serif;
+}
+.biome-semibold {
+  font-family: "BiomeSemibold", sans-serif;
+}
+.biome-bold {
+  font-family: "Biome", sans-serif;
+}
+.MuiTypography-body1 {
+    font-family: "Biome", sans-serif !important;
+    font-size:14px;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  scroll-behavior: smooth;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 102;
+  background-color: #010437;
+  padding-right: 4rem;
+  padding-left:  4rem;
+}
+.m-sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 102;
+  background-color: #010437;
+  padding-right: 1rem;
+  
+}
+.bg-special {
+  clip-path: polygon(
+    0% 5%,
+    4% 0%,
+    96% 0%,
+    100% 4%,
+    100% 93%,
+    96% 100%,
+    34% 100%,
+    20% 88%,
+    3% 88%,
+    0% 84%
+  );
+  width: 100%;
+  height: 70vh;
+}
+.blur-circle {
+  width: 372px;
+  height: 372px;
+  background: rgba(51, 51, 255, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  top: -10em;
+  left: -5em;
+}
+.blur-circle-purple {
+  width: 322px;
+  height: 322px;
+  background: rgba(163, 51, 255, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2em;
+  left: 3rem;
+}
+.blur-circle-purple-r {
+  width: 322px;
+  height: 322px;
+  background: rgba(163, 51, 255, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10em;
+  right: -10rem;
+}
+.blur-circle-r {
+  width: 372px;
+  height: 372px;
+  background: rgba(51, 51, 255, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10em;
+  right: -5em;
+}
+.bg-index{
+  z-index: -1;
+  
+}
+.top-radius{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.element-index{
+  z-index: 1;
+}
+.flow-hide {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.flow-hide-x {
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.flow-hide::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+/* Sportrex Eco  */
+.cardContainer{
+  position:relative;
+  
+}
+.img-hover{
+  position: absolute;
+  bottom: 0;
+  
+  left: -1.5rem;
+  top:0.5rem;
+  right: 0;
+  color: #fff;
+  background:#0E1648;
+  
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+  max-height: 100%;
+  height: 15rem;
+  padding-top:0.5rem;
+  width:14rem;
+  display:none;
+  
+}
+.m-img-hover{
+  position: absolute;
+  bottom: 0;
+  
+  left: -1.5rem;
+  top:0.5rem;
+  right: 0;
+  color: #fff;
+  background:#0E1648;
+  
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+  max-height: 100%;
+  height: 13rem;
+  padding-top:0.5rem;
+  width:12rem;
+  display:none;
+  
+}
+.sport-V{
+  border-radius:3.5rem;
+}
+.cardContainer:hover .img-hover {
+  transform: translateY(4%);
+  transform: translateX(0%);
+  display:block;
+}
+.krmNah{
+  background-color: #3333FF !important ;
+}
+.eWjCzc{
+  background-color: #3333FF !important ;
+  color: white !important;
+  
+}
+video{
+  border-radius:2rem !important;
+
+}
+
+
+.hero-height{
+  height:36rem;
+}
+.gradient-text{
+  background: linear-gradient(91.02deg, #FAC744 8.95%, #B257FF 58.82%, #344AFF 107.66%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+fill: transparent;
+}
+.mtc{
+  border-radius: 30px 0px 0px 0px;
+}
+.tokenM{
+border-radius: 0px 30px 0px 0px;
+}
+
+.border-token{
+  border-radius:1rem 1rem 0 0 ;
+}
+
+
+/* .desktopBg{
+  background-image: url("https://media.publit.io/file/DESKTOP-BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+  width: 100%;
+  z-index: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px)  {
+  .hero-height {
+    height:auto;
+  }
+}
+@media (max-width: 600px)  {
+  .hero-height {
+    height:auto;
+  }
+  
+  .hero-h{
+    height:85vh;
+    margin-left: -1rem;
+  }
+  .m-story{
+    color:white;
+    font-size:14px;
+    margin-bottom: 1rem;
+    line-height: 27px;
+  }
+  .m-story-feature{
+     font-size:14px;
+    margin-bottom: 8px;
+    color:black;
+  }
+  .m-title{
+ background: linear-gradient(91.02deg, #FAC744 8.95%, #B257FF 58.82%, #344AFF 107.66%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+fill: transparent;
+font-size: 1.375rem;
+line-height: 27.9px;
+  margin-bottom :8px !important;
+  
+  }
+  .m-getBtn{
+    font-size: 12px;
+     padding:1rem 2rem;
+  }
+  .m-ctaBtn{
+    font-size: 14px;
+    font-weight: bold;
+     padding:1rem 4rem;
+       font-family: "BiomeSemibold", sans-serif;
+     
+  }
+  .m-preBtn{
+         font-size: 12px;
+         padding:1rem 2rem;
+  }
+  .sport-V{
+    border-radius:2rem !important;
+  }
+  .krmNah{
+  background-color: #3333FF !important ;
+}
+.eWjCzc{
+  background-color: #3333FF !important ;
+  color: white !important;
+  
+}
+.mobile-card{
+  margin-left: -2rem;
+}
+
+}
+
+
+
